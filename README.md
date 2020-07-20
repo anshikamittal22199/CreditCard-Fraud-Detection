@@ -9,4 +9,4 @@ The ‘Time’ and ‘Amount’ features are not transformed data.
 There is no missing value in the dataset.
 Total/Net Accuracy: One approach to gauge the compute model’s correctness is to use Accuracy as the deciding parameter. But, as stated earlier, in a highly skewed data set like this, we know that even if we predict all values as non-fraudulent, we’ll have only 492 wrong predictions out of 284,807 in total. So, the accuracy is excellent, but it still doesn’t solve our problem as we want to identify as many fraud cases as possible. So, we can’t use accuracy as a deciding factor here.
 Confusion Matrix: Merely tabulating the confusion matrix will not provide a clear understanding of the performance of the data. This is because the total number of fraud cases is much less, and variation in the confusion matrix will be so small that it will be equivalent to a justified error in a balanced dataset (probably even less!). So, this measure is also ruled out.
-The accuracy of the project found was 
+The accuracy of the project found with Local Outlier Factor is 97 and with Isolation forest id 71.
