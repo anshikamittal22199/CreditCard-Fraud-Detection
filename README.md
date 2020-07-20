@@ -1,2 +1,12 @@
 # CreditCard-Fraud-Detection
+INTRODUCTION-
 The project analysed the past credit card transactions with the knowledge which turned out to be fraud.The model was trained to analyse whether the new transaction was fraudulent or not.
+The project illustrates the modeling of a data set using a machine learning paradigm classification, with Credit Card Fraud Detection being the base. Classification is a machine learning paradigm that involves deriving a function that will separate data into categories, or classes, characterized by a training set of data containing observations (instances) whose category membership is known. This function is then used in identifying in which of the categories a new observation belongs
+Credit Card Fraud Detection is a typical example of classification. In this process, we have focused more on analyzing the feature modeling and possible business use cases of the algorithm’s output than on the algorithm itself. We used the implementation of Binomial Logistic Regression Algorithm in the ‘ROCR’ package on the PCA transformed Credit Card Fraud data.
+The data set is highly skewed, consisting of 492 frauds in a total of 284,807 observations. This resulted in only 0.172% fraud cases. This skewed set is justified by the low number of fraudulent transactions.
+The dataset consists of numerical values from the 28 ‘Principal Component Analysis (PCA)’ transformed features, namely V1 to V28. Furthermore, there is no metadata about the original features provided, so pre-analysis or feature study could not be done.
+The ‘Time’ and ‘Amount’ features are not transformed data.
+There is no missing value in the dataset.
+Total/Net Accuracy: One approach to gauge the compute model’s correctness is to use Accuracy as the deciding parameter. But, as stated earlier, in a highly skewed data set like this, we know that even if we predict all values as non-fraudulent, we’ll have only 492 wrong predictions out of 284,807 in total. So, the accuracy is excellent, but it still doesn’t solve our problem as we want to identify as many fraud cases as possible. So, we can’t use accuracy as a deciding factor here.
+Confusion Matrix: Merely tabulating the confusion matrix will not provide a clear understanding of the performance of the data. This is because the total number of fraud cases is much less, and variation in the confusion matrix will be so small that it will be equivalent to a justified error in a balanced dataset (probably even less!). So, this measure is also ruled out.
+The accuracy of the project found was 
